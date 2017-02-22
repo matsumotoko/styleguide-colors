@@ -1,0 +1,50 @@
+{
+  "name": "styleguide-colors",
+  "description": "generate html markup for display project color variables",
+  "version": "0.1.0",
+  "homepage": "https://github.com/webdesignberlin/styleguide-colors",
+  "author": {
+    "name": "Michael Gerstmann",
+    "email": "guten-tag@seiler-gerstmann.de",
+    "url": "http://micha.seiler-gerstmann.de/"
+  },
+  "contributors": [
+    {
+      "name": "Frank Holder",
+      "url": "https://twitter.com/atom_strom"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/webdesignberlin/styleguide-colors.git"
+  },
+  "bugs": {
+    "url": "https://github.com/webdesignberlin/styleguide-colors/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/webdesignberlin/styleguide-colors/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 6.9.5"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "nodeunit test/styleguide_colors_test.js"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.4"
+  },
+  "keywords": [
+    "styleguide",
+    "style guide",
+    "npm",
+    "generator",
+    "scss sass"
+  ],
+  "dependencies": {
+    "nodeunit": "^0.11.0"
+  }
+}
