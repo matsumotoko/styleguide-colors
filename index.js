@@ -11,6 +11,8 @@
 const _ = require('lodash');
 const fs = require('fs');
 const Options = require('./options');
+const mkdirp = require('mkdirp');
+const getDirName = require('path').dirname;
 
 module.exports = function(opt) {
 
@@ -50,9 +52,24 @@ module.exports = function(opt) {
   }
 
   //html += '</'+ options.wrapper +'>\n';
-  html += `</${options.wrapper}
+  html += `</${options.wrapper}>
 `;
+  if(!options.outputFile){
+    return html;
+  } else {
+    /*fs.writeFile(__dirname + options.outputFile, html, (err) => {
+      if (err) throw err;
+      console.log('It\'s saved!');
+    });*/
 
-  return html;
+    mkdirp(getDirName(options.outputFile), function (err) {
+      if (err) return cb(err);
 
+      fs.writeFile(options.outputFile, html, (err) => {
+        if (err) throw err;
+        console.log('It\'s saved!');
+      });
+    });
+
+  }
 };

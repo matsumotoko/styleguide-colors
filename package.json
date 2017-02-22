@@ -35,7 +35,9 @@
     "test": "nodeunit test/styleguide_colors_test.js"
   },
   "devDependencies": {
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "mkdirp": "^0.5.1",
+    "path": "^0.12.7"
   },
   "keywords": [
     "styleguide",
