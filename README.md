@@ -43,7 +43,7 @@ $colors: (
 
 
 ```
-var sc = require('styleguide-color');
+var sc = require('styleguide-colors');
 
 var options = {
  separator: ',',
@@ -51,7 +51,7 @@ var options = {
  wrapper: 'section',
  template: '',
  templatePath: '',
- sassPath: 'test/app/styles/_variables.scss'
+ sassPath: './app/styles/_variables.scss'
 };
 
 sc(options);
