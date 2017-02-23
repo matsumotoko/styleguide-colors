@@ -29,6 +29,8 @@ const fs = require('fs');
 const Options = require('../options');
 const options = new Options();
 
+options.sassPath = 'test/app/styles/_variables.scss';
+
 exports.styleguide_colors = {
   'does main file exist': function(test) {
     test.expect(1);

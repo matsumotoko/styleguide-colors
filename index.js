@@ -18,6 +18,11 @@ module.exports = function(opt) {
 
   const options = new Options(opt);
 
+  if(!options.sassPath){
+    console.error('no Stylesheet given.');
+    return;
+  }
+
   const src = fs.readFileSync(options.sassPath, 'utf8');
   const markup = fs.readFileSync(options.templatePath, 'utf8');
 
@@ -58,9 +63,9 @@ module.exports = function(opt) {
     return html;
   } else {
     /*fs.writeFile(__dirname + options.outputFile, html, (err) => {
-      if (err) throw err;
-      console.log('It\'s saved!');
-    });*/
+     if (err) throw err;
+     console.log('It\'s saved!');
+     });*/
 
     mkdirp(getDirName(options.outputFile), function (err) {
       if (err) return cb(err);
