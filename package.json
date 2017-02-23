@@ -1,7 +1,7 @@
 {
   "name": "styleguide-colors",
   "description": "generate html markup for display project color variables",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/webdesignberlin/styleguide-colors",
   "author": {
     "name": "Michael Gerstmann",
@@ -36,7 +36,6 @@
   },
   "devDependencies": {
     "lodash": "^4.17.4",
-    "mkdirp": "^0.5.1",
     "path": "^0.12.7"
   },
   "keywords": [
@@ -47,6 +46,7 @@
     "scss"
   ],
   "dependencies": {
+    "mkdirp": "^0.5.1",
     "nodeunit": "^0.11.0"
   }
 }
