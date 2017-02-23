@@ -24,7 +24,7 @@ module.exports = function(opt) {
   }
 
   const src = fs.readFileSync(options.sassPath, 'utf8');
-  const markup = fs.readFileSync(__dirname + options.templatePath, 'utf8');
+  const markup = fs.readFileSync(options.templatePath, 'utf8');
 
   // generate markup via color definition file(s)
   let typeObj = {
