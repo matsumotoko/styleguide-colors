@@ -49,9 +49,9 @@ var options = {
  separator: ',',
  headline: 'All my colors',
  wrapper: 'section',
- template: '',
  templatePath: '',
- sassPath: './app/styles/_variables.scss'
+ sassPath: './app/styles/_variables.scss',
+ outputFile: '.app/output.html'
 };
 
 sc(options);
@@ -77,6 +77,8 @@ The generated output:
     </div>
 </section>
 ```
+
+**Note:** if no outputFile is given, the npm module returns html as string.
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Nodeunit](https://github.com/caolan/nodeunit).
