@@ -7,7 +7,7 @@ module.exports = class{
     this.headline = opt.headline || 'Colors';
     this.wrapper = opt.wrapper || 'section';
     this.templatePath = opt.templatePath || 'template.html';
-    this.sassPath = opt.sassPath || 'test/app/styles/_variables.scss';
+    this.sassPath = opt.sassPath || '';
     this.outputFile = opt.outputFile || null;
   }
 };
