@@ -1,7 +1,7 @@
 {
   "name": "styleguide-colors",
   "description": "generate html markup for display project color variables",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "homepage": "https://github.com/webdesignberlin/styleguide-colors",
   "author": "Michael Gerstmann <guten-tag@seiler-gerstmann.de> (http://micha.seiler-gerstmann.de/)",
   "contributors": [
@@ -20,9 +20,6 @@
       "url": "https://github.com/webdesignberlin/styleguide-colors/blob/master/LICENSE-MIT"
     }
   ],
-  "engines": {
-    "node": ">= 6.9.5"
-  },
   "scripts": {
     "start": "node index.js",
     "test": "nodeunit test/styleguide_colors_test.js"
