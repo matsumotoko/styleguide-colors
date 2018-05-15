@@ -46,7 +46,7 @@ module.exports = function(opt) {
 `;
   }
   if(options.varsHeadline !== false){
-    html += `<h2>${options.headline}</h2>`;
+    html += `<h2>${options.varsHeadline}</h2>`;
   }
 
   map = src.match(typeObj.blockRegex)[0];
