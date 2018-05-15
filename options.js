@@ -5,6 +5,7 @@ module.exports = class{
     }
     this.separator = opt.separator || ',';
     this.headline = opt.headline || 'Colors';
+    this.varsHeadline = opt.varsHeadline || '';
     this.wrapper = opt.wrapper || 'section';
     this.templatePath = opt.templatePath || __dirname+'/template.html';
     this.sassPath = opt.sassPath || '';

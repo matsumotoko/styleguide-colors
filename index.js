@@ -45,6 +45,9 @@ module.exports = function(opt) {
     html += `    <h1>${options.headline}</h1>
 `;
   }
+  if(options.varsHeadline !== false){
+    html += `<h2>${options.headline}</h2>`;
+  }
 
   map = src.match(typeObj.blockRegex)[0];
   map = map.match(typeObj.mapItemRegex);
