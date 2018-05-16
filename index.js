@@ -49,7 +49,7 @@ module.exports = function(opt) {
     html += `
     <div class="sg-colors__headline">
       <b>${options.varsHeadline}</b>
-      <b>${options.varsHeadline}</b>
+      <b>${options.colorHeadline}</b>
     </div>
     `;
   }
