@@ -45,8 +45,13 @@ module.exports = function(opt) {
     html += `    <h1>${options.headline}</h1>
 `;
   }
-  if(options.varsHeadline !== false){
-    html += `<h2>${options.varsHeadline}</h2>`;
+  if((options.varsHeadline !== false) && (options.colorHeadline !== false)){
+    html += `
+    <div class="sg-colors__headline">
+      <b>${options.varsHeadline}</b>
+      <b>${options.varsHeadline}</b>
+    </div>
+    `;
   }
 
   map = src.match(typeObj.blockRegex)[0];
