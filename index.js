@@ -28,7 +28,7 @@ module.exports = function(opt) {
 
   // generate markup via color definition file(s)
   let typeObj = {
-      blockRegex: /\/\*\s?<@colors*(\S*)(\n|\r|.)*?\s?colors@>\s?\*\//igm,
+      blockRegex: /\/\$\*\s?<@colors*(\S*)(\n|\r|.)*?\s?colors@>\s?\*\//igm,
       mapItemRegex: /\'([a-z0-9-_]-*)+\':\s?#[a-fA-F0-9]{3,6}/g,
       html: function (key, value) {
         return _.template(markup)({'key': key, 'value': value});
